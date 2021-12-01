@@ -55,5 +55,6 @@ main(){
  * Each % sign matches in order of the second argument.
  * Printf is not a function from C language, it's only a useful function that's part of the
  * standard library that's accessible to C language.
- * C language does not define any I/O */
+ * C language does not define any I/O
+ * This code is on page 24 of the book, exercise 1-3 */
 

@@ -19,4 +19,5 @@ main(){
     }
 }
 /* The amount of character avaiable to the % to fill up afects
- * 'white spaces'. It fills up from right to left.*/
+ * 'white spaces'. It fills up from right to left.
+ * This code is on page 24, execise 1-4*/
