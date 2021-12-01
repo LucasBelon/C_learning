@@ -11,8 +11,7 @@ main(){
     celsius = start ;
     printf(" This is a Celsius-Fahrenheit convertion table\n") ;
     printf(" Celsius\tFahr\n") ;
-    while (celsius <= end)
-    {
+    while (celsius <= end){
         fahr = ( (9.0/5.0)*(celsius) )+32.0 ;
         printf("%4.0f°C----->%6.1f°F\n", celsius, fahr) ;
         celsius = celsius + incr ;

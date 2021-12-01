@@ -9,8 +9,7 @@ main(){
     incr = 20;  /*step increment*/
 
     fahr = start ;
-    while (fahr <= end)
-    {
+    while (fahr <= end){
         celsius = (5.0/9.0)*(fahr-32.0) ;
         printf("%4.0f %6.1f\n", fahr, celsius) ;
         fahr = fahr + incr ;

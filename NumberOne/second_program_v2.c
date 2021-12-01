@@ -11,8 +11,7 @@ main(){
     fahr = start ;
     printf("This is my second program\n") ;
     printf("  Fahr \t  Celsius\n") ;
-    while (fahr <= end)
-    {
+    while (fahr <= end){
         celsius = (5.0/9.0)*(fahr-32.0) ;
         printf("%4.0f°F-->%6.1f°C\n", fahr, celsius) ;
         fahr = fahr + incr ;

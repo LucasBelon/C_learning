@@ -11,8 +11,9 @@
 main(){
     int fahr ;
     printf("This is my fourth program\n  Fahr \t Celsius\n");
-    for (fahr = START; fahr <= END; fahr = fahr + INCR)
+    for (fahr = START; fahr <= END; fahr = fahr + INCR){
         printf("%4d°F %6.1f°C\n", fahr, (5.0 / 9.0) * (fahr - 32)) ;
+    }
 }
 
 /* This code is on page 26 of the book */

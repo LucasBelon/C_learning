@@ -7,8 +7,9 @@ main(){
     long nc ;
 
     nc = 0;
-    while(getchar() != EOF)
+    while(getchar() != EOF){
         ++nc ;
+    }
     printf("%ld\n",nc) ;
 }
 
@@ -35,4 +36,4 @@ main(){
     command1;
   command2;
  *
- * */
+ * this code is on page 28 of the book */
