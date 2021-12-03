@@ -81,3 +81,12 @@ THIS ONE IS THE OTHER------>*/
  * };
  *
  * */
+/* Exercise 1-9: How would you test the word count program? Which would be
+ * some limit cases?
+ * Answer: The program need to be tested using some levels of complexity
+ * 1 - Only words, no accentuation, dashes, underlines, etc...
+ * 2 - With tabs, newlines, backspaces, and other special characters [on 
+ * the \[x] format]
+ * 3 - With dashes, dots, underlines, and colons, commas, etc
+ * 4 - With a smart word detection, with a sofisticated detection on 
+ * the correct writing of the words. */
