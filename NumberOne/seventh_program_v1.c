@@ -62,3 +62,22 @@ main(){
     }
 }
 THIS ONE IS THE OTHER------>*/ 
+
+/* On line 12 we see a different way to put values on our variables.
+ * If they're all the same we can do this short way.
+ * On line 19 we see the '||' operator, it means 'or', and it's part
+ * of boolean values operation. Probably there's a bool table if you 
+ * need further information.
+ * For the 'and' operator we use &&.
+ * On this program we learned the else statement. It will only run if the 'if'
+ * statement do not run. It's not that easy to visualize, but we're actually
+ * nesting that if inside the else.
+ * When we have only one action to our decision structure we can ommit the {}
+ * So, we could do as it follows for the line 22:
+ *
+ * else {
+ *     if (){
+ *     };
+ * };
+ *
+ * */
