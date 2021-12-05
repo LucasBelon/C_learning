@@ -1,17 +1,17 @@
 /* This program is meant to write a function that makes
  * the positive integer power of a number.*/
 
-main(){
-    int i ;
-    for (i = 0; i < 31 ; ++i){
-        printf("%d %d %d\n", i, pot(2, i), pot(-3, i) ) ;
-    }
-}
+#define CHAR    "amigo"
 
+
+main(){
+    long int i ;
+    printf("%s",CHAR) ;
+}
 pot(x, n)
 int x, n ;
 {
-    int i, p ;
+    long int i, p ;
 
     p = 1 ;
     for (i = 1; i <= n; ++i){
