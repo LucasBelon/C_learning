@@ -23,8 +23,8 @@ main(){
             inword = YES ;
             ++ nw ;
         }
+        printf("nl=%d nw=%d nc=%d\n", nl, nw, nc) ;
     }
-    printf("nl=%d nw=%d nc=%d\n", nl, nw, nc) ;
 }
 
 
