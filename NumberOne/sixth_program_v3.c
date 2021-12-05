@@ -5,12 +5,14 @@
 #define EOF 0
 
 main(){
-    
     int c ;
+
     while ((c = getchar()) != EOF){
         if (c == ' '){
             putchar(c) ;
-            while((c = getchar()) == ' ');
+            while((c = getchar()) == ' '){
+                ;
+            }
             putchar(c) ;
         }
         else putchar(c) ;
@@ -34,7 +36,7 @@ main(){
     while((c = getchar()) != EOF){
         if(c == ' '){
             putchar(c) ;
-            while((c = getchar()) == ' ');
+            while((c = getchar()) == ' ') ;
         }
         putchar(c) ;
     }

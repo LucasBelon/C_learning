@@ -7,11 +7,11 @@ main(){
 
     nl = 0 ;
     while ((c=getchar()) != EOF){
-        if (c=='\n'){
+        if (c == '\n'){
             ++nl ;
         }
-        printf("%d\n", nl) ;
     }
+    printf("%d\n", nl) ;
 }
 /* In the while body we have a if statement to see 
  * if the character that getchar() gets is a 'new line'

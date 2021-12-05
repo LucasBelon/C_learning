@@ -4,13 +4,13 @@ main(){
     int start, end, incr ;
     float fahr, celsius ;
 
-    start = 0;  /*lower limit of the table*/
-    end = 300;  /*upper limit of the table*/
-    incr = 20;  /*step increment*/
+    start = 0 ;  /*lower limit of the table*/
+    end = 300 ;  /*upper limit of the table*/
+    incr = 20 ;  /*step increment*/
 
     fahr = start ;
     while (fahr <= end){
-        celsius = (5.0/9.0)*(fahr-32.0) ;
+        celsius = (5.0 / 9.0)*(fahr - 32.0) ;
         printf("%4.0f %6.1f\n", fahr, celsius) ;
         fahr = fahr + incr ;
     }

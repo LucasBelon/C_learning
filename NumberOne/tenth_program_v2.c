@@ -1,19 +1,25 @@
 /* This program is meant to read a group of lines
- * and print the biggest of them.*/
+ * and print the biggest of them.
+ * This program shows what variable scope is, by using
+ * the declaration of them, outside even of the main().
+ * It forces us to tell our program that the variable is
+ * outside of the function itself.*/
 
 #define MAXLINESIZE    1000    /*Max size of a line*/
+int max ; /* Max size until now*/
+char line[MAXLINESIZE] ; /* current line*/
+char keeper[MAXLINESIZE] ; /* bigest kept line*/
 
 main(){
     int size ; /* Current size of the line*/
-    int max ; /* Max size until now*/
-    char line[MAXLINESIZE] ; /* current line*/
-    char keeper[MAXLINESIZE] ; /* bigest kept line*/
+    extern int max ; /* Max size until now*/
+    extern char keeper[] ; /* bigest kept line*/
 
     max = 0 ;
-    while ( (size = readline(line, MAXLINESIZE)) > 0){
+    while ( (size = readline()) > 0){
         if (size > max){
             max = tam ;
-            copy (line, keeper) ;
+            copy() ;
         }
     }
     if (max > 0){ /* input had one line*/

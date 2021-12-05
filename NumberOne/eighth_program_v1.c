@@ -12,7 +12,7 @@ main(){
     nwhite = nother = 0 ;
 
     for (i = 0; i < 10; ++ i){
-        ndigit[i] = 0;
+        ndigit[i] = 0 ;
     }
     while ((c = getchar()) != EOF){
         if (c >= '0' && c<= '9'){
@@ -20,18 +20,18 @@ main(){
         }
         else{
             if (c == ' ' || c == '\n' || c == '\t'){
-                ++ nwhite;
+                ++ nwhite ;
             }
             else{
-                ++ nother;
+                ++ nother ;
             }
         }
     }
-    printf("digits=");
+    printf("digits=") ;
     for (i = 0; i < 10; ++ i){
-        printf(" %d", ndigit[i]);
+        printf(" %d", ndigit[i]) ;
     }
-    printf("\nwhitespace = %d, other = %d\n", nwhite, nother);
+    printf("\nwhitespace = %d, other = %d\n", nwhite, nother) ;
 }
 
 /* The 10th line shows us a declaration of an array. We access them by their indexes.

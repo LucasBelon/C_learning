@@ -17,5 +17,5 @@ main(){
  * to supress the decimal space.
  * The for/while loops verify if there are data to work with
  * before getting into the loop. It puts a little more 
- * of performance on the run
-
+ * of performance on the run.
+ * C reads the ascii table, so our characters can be stored as numbers*/

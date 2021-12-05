@@ -11,7 +11,7 @@
 #define EOF -1
 
 main(){
-    int c;
+    int c ;
 
     while ( ( c = getchar() ) != EOF ){
         putchar(c) ;

@@ -14,18 +14,24 @@ main(){
     while ((c=getchar()) != EOF){
         if (c=='\n'){
             ++nl ;
+            printf("The character currently read is: newline") ;
         }
         else{
             if(c=='\t'){
-                ++ nt ;
+                ++nt ;
+                printf("The character currently read is: tab") ;
             }
             else{
                 if(c==' '){
-                    ++ ns ;
+                    ++ns ;
+                    printf("The character currently read is: space") ;
+                }
+                else{
+                    printf("The character currently read is: %c", c) ;
                 }
             }
         }
-        printf("\n nl is %d \n nt is% d \n ns is %d \n ", nl, nt, ns) ;
+        printf("\n nl is %d \n nt is %d \n ns is %d \n ", nl, nt, ns) ;
     }
 }
 /* This code is on page 30, exercise 1-6 of the book*/

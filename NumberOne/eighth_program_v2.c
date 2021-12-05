@@ -8,7 +8,7 @@
 #define NO  0
 
 main(){
-    int c, i, nc, inword;
+    int c, i, nc, inword ;
 
     inword = NO ;
     nc = 0 ;
@@ -18,15 +18,15 @@ main(){
             inword = NO ;
             printf("\n") ;
             for (i = 1; i < nc; ++ i){
-                printf("=");
-            };
+                printf("=") ;
+            }
             nc = 0 ;
         }
         else if (inword == NO){
             inword = YES ;
         }
     }
-    printf("\n");
+    printf("\n") ;
 }
 /* The logic is: When we're out of a word, when the inword == NO
  * we print the number of characters of the word. We use the 

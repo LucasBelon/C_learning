@@ -8,12 +8,11 @@
  *#define EOF   -1
  */
 
-#define EOF 0
-
+#define EOF -1
 main(){
-    int c;
+    int c ;
 
-    c = getchar();
+    c = getchar() ;
     while (c != EOF){
         putchar(c) ;
         c = getchar() ;

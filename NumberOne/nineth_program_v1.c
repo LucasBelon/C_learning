@@ -9,15 +9,15 @@ main(){
 }
 
 pot(x, n)
-int x, n;
+int x, n ;
 {
-    int i, p;
+    int i, p ;
 
-    p = 1;
+    p = 1 ;
     for (i = 1; i <= n; ++i){
-        p = p * x;
+        p = p * x ;
     }
-    return (p);
+    return (p) ;
 }
 
 

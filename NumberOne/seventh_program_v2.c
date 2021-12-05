@@ -6,20 +6,20 @@
 #define NO  0
 
 main(){
-    int c, nl, nw, nc, inword;
+    int c, inword ;
 
     inword = NO ;
     while ((c = getchar()) != EOF){
         if (inword == YES){
-            putchar(c);
+            putchar(c) ;
         }
         if (c == ' ' || c == '\n' || c == '\t'){
-            inword = NO;
-            putchar('\n');
+            inword = NO ;
+            putchar('\n') ;
         }
         else if (inword == NO){
-            inword = YES;
-            putchar(c);
+            inword = YES ;
+            putchar(c) ;
         }
     }
 }

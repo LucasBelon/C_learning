@@ -6,21 +6,21 @@
 #define NO  0
 
 main(){
-    int c, nl, nw, nc, inword;
+    int c, nl, nw, nc, inword ;
 
     inword = NO ;
     nl = nw = nc = 0 ;
-    printf("nl = number of lines\nnw = number of words\nnc = number of characters\n\n");
+    printf("nl = number of lines\nnw = number of words\nnc = number of characters\n\n") ;
     while ((c = getchar()) != EOF){
-        ++nc;
+        ++nc ;
         if (c == '\n'){
             ++ nl ;
         }
         if (c == ' ' || c == '\n' || c == '\t'){
-            inword = NO;
+            inword = NO ;
         }
         else if (inword == NO){
-            inword = YES;
+            inword = YES ;
             ++ nw ;
         }
     }
@@ -40,22 +40,22 @@ main(){
 #define NO  0
 
 main(){
-    int c, nl, nw, nc, inword, ntab;
+    int c, nl, nw, nc, inword, ntab ;
 
     inword = NO ;
     nl = nw = nc = ntab = 0 ;
-    printf("nl = number of lines\nnw = number of words\nnc = number of characters\n\n");
+    printf("nl = number of lines\nnw = number of words\nnc = number of characters\n\n") ;
     while ((c = getchar()) != EOF){
-        ++nc;
+        ++nc ;
         if (c == '\n'){
             ++ nl ;
         }
         if (c == ' ' || c == '\n' || c == '\t'){
-            inword = NO;
+            inword = NO ;
             ++ ntab ;
         }
         else if (inword == NO){
-            inword = YES;
+            inword = YES ;
             ++ nw ;
         }
         printf("nl=%d nw=%d nc=%d nt = %d\n", nl, nw, nc, ntab) ;
@@ -64,7 +64,7 @@ main(){
 THIS ONE IS THE OTHER------>*/ 
 
 /* On line 12 we see a different way to put values on our variables.
- * If they're all the same we can do this short way.
+ * If they're all the same we can do this shorter way.
  * On line 19 we see the '||' operator, it means 'or', and it's part
  * of boolean values operation. Probably there's a bool table if you 
  * need further information.
@@ -73,14 +73,14 @@ THIS ONE IS THE OTHER------>*/
  * statement do not run. It's not that easy to visualize, but we're actually
  * nesting that if inside the else.
  * When we have only one action to our decision structure we can ommit the {}
- * So, we could do as it follows for the line 22:
+ * So, we could do as it follows for the line 22 in a verbose way:
  *
- * else {
- *     if (){
- *     };
- * };
- *
+  else {
+      if (){
+      }
+  }
  * */
+
 /* Exercise 1-9: How would you test the word count program? Which would be
  * some limit cases?
  * Answer: The program need to be tested using some levels of complexity

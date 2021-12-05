@@ -4,15 +4,14 @@ main(){
     int start, end, incr ;
     float fahr, celsius ;
 
-    start = 0;  /*lower limit of the table*/
-    end = 300;  /*upper limit of the table*/
-    incr = 20;  /*step increment*/
+    start = 0 ;  /*lower limit of the table*/
+    end = 300 ;  /*upper limit of the table*/
+    incr = 20 ;  /*step increment*/
 
     celsius = start ;
-    printf(" This is a Celsius-Fahrenheit convertion table\n") ;
-    printf(" Celsius\tFahr\n") ;
+    printf(" This is a Celsius-Fahrenheit convertion table\n Celsius\tFahr\n") ;
     while (celsius <= end){
-        fahr = ( (9.0/5.0)*(celsius) )+32.0 ;
+        fahr = ( (9.0/5.0) * (celsius) ) + 32.0 ;
         printf("%4.0f°C----->%6.1f°F\n", celsius, fahr) ;
         celsius = celsius + incr ;
     }
