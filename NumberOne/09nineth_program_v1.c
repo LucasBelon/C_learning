@@ -1,20 +1,21 @@
 /* This program is meant to write a function that makes
  * the positive integer power of a number.*/
 
-#define CHAR    "amigo"
 
-
-main(){
-    long int i ;
-    printf("%s",CHAR) ;
+main(){         /* It tests the pot function*/
+    int i ;
+    printf("i\t2^i\t-3^i\n") ;
+    for (i = 0 ; i < 10 ; ++i){
+        printf("%d\t%d\t%d\n", i, pot(2, i), pot(-3, i) ) ;
+    }
 }
-pot(x, n)
+pot(x, n)       /* executes the power operation*/
 int x, n ;
 {
-    long int i, p ;
+    int i, p ;
 
     p = 1 ;
-    for (i = 1; i <= n; ++i){
+    for (i = 1 ; i <= n ; ++i){
         p = p * x ;
     }
     return (p) ;

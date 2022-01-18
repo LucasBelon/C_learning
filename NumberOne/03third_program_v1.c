@@ -2,7 +2,7 @@
  * with a for loop.*/
 main(){
     int fahr ;
-    printf("This is my fourth program\n  Fahr \t Celsius\n") ;
+    printf("This is my third program\n  Fahr \t Celsius\n") ;
     for (fahr = 0; fahr <= 300; fahr = fahr + 20){
         printf("%4d°F %6.1f°C\n", fahr, (5.0 / 9.0) * (fahr - 32)) ;
     }

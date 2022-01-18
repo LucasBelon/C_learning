@@ -15,7 +15,7 @@ main(){
 
 /* The ++ operator is a incrementation of 1 to the counter.
  * It's displayed before the variable because of the stack
- * from the scientific calculator. It need a operation and then a number,
+ * from the scientific calculator. It need's an operation and then a number,
  * so we got the operation ++ and then the variable that suffers
  * the action.
  * I'll try to find out when the {} are needed. When asked it to

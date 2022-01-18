@@ -18,8 +18,8 @@ main(){
     }
 }
 /* It takes the c=getchar() from before the while statement
- * to put it into the if-else that lives inside the while.
+ * to put it into the if-else that lives inside while.
  * It's nice to use the full power of a logic structure.
  * This code is on bottom of page 27 of the book.
- * The existence of the () over the 'c=getchar()' is 
+ * The existence of the () around the 'c=getchar()' is 
  * necessary, since the '!=' has a higher priority over the '='*/
