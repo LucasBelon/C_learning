@@ -1,4 +1,4 @@
-/* This code is meant to aswer exercise 1-10 from page 31 of the book
+/* This code is meant to answer exercise 1-10 from page 31 of the book
  * write a program that prints words from your input, one by line*/
 
 #define EOF -1
@@ -30,7 +30,7 @@ main(){
  * if statement that bring the rest of them. It need to be located before or after the
  * if-else statements that changes the 'inword' state, or else it would always be
  * printing the wrong character.
- * Everytime the 'inword' changes to 'NO' we need to print a new line, and we do it by
+ * Every time the 'inword' changes to 'NO' we need to print a new line, and we do it by
  * putting as an argument the '\n' to the putchar() 
  *
- * The exercise 1-11 is boring. I would need to nest some if-else's, and i'm not on the mood*/
+ * The exercise 1-11 is boring. I would need to nest some if-else's, and I'm not on the mood*/

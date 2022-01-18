@@ -8,12 +8,12 @@
 #define MAXLINESIZE    1000    /*Max size of a line*/
 int max ; /* Max size until now*/
 char line[MAXLINESIZE] ; /* current line*/
-char keeper[MAXLINESIZE] ; /* bigest kept line*/
+char keeper[MAXLINESIZE] ; /* biggest kept line*/
 
 main(){
     int size ; /* Current size of the line*/
     extern int max ; /* Max size until now*/
-    extern char keeper[] ; /* bigest kept line*/
+    extern char keeper[] ; /* biggest kept line*/
 
     max = 0 ;
     while ( (size = readline()) > 0){
@@ -54,4 +54,4 @@ char s1[], s2[] ;
     }
 }
 
-/* This program is onpage 37 of the book*/
+/* This program is on page 37 of the book*/

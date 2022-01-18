@@ -1,6 +1,6 @@
-/* This program is meant to count each occurrency of each character
+/* This program is meant to count each occurrence of each character
  * that comes from the input. There are 12 input categories, so it's
- * convenient to use an array to count a number of occurencies of each digit
+ * convenient to use an array to count a number of occurrences of each digit
  * instead of 10 individual variables.*/
 
 #define EOF -1
@@ -31,11 +31,11 @@ main(){
     for (i = 0; i < 10; ++ i){
         printf(" %d", ndigit[i]) ;
     }
-    printf("\nwhitespace = %d, other = %d\n", nwhite, nother) ;
+    printf("\nwhite space = %d, other = %d\n", nwhite, nother) ;
 }
 
 /* The 10th line shows us a declaration of an array. We access them by their indexes.
  * Any integer expression can be used as a index number. The indexes always starts on zero.
  * The declared array is there to store numeric values. The operation inside the index is there
- * to sincronize the number as string to the number as decimal on the ascii table. It's a clever
+ * to synchronize the number as string to the number as decimal on the ASCII table. It's a clever
  * trick, but not that much useful to me*/

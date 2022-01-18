@@ -1,6 +1,6 @@
 /* When we're using printf always use double quotes.
  * This program is meant to print a horizontal histogram
- * that shows the lenght of characters of a word
+ * that shows the length of characters of a word
  * It's about exercise 1-12 in the page 33 of the book*/
 
 #define EOF -1

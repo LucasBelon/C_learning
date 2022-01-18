@@ -66,13 +66,13 @@ THIS ONE IS THE OTHER------>*/
 /* On line 12 we see a different way to put values on our variables.
  * If they're all the same we can do this shorter way.
  * On line 19 we see the '||' operator, it means 'or', and it's part
- * of boolean values operation. Probably there's a bool table if you 
+ * of boolean values operation. Probably there's a boolean table if you 
  * need further information.
  * For the 'and' operator we use &&.
  * On this program we learned the else statement. It will only run if the 'if'
  * statement do not run. It's not that easy to visualize, but we're actually
  * nesting that if inside the else.
- * When we have only one action to our decision structure we can ommit the {}
+ * When we have only one action to our decision structure we can omit the {}
  * So, we could do as it follows for the line 22 in a verbose way:
  *
   else {
@@ -88,5 +88,5 @@ THIS ONE IS THE OTHER------>*/
  * 2 - With tabs, newlines, backspaces, and other special characters [on 
  * the \[x] format]
  * 3 - With dashes, dots, underlines, and colons, commas, etc
- * 4 - With a smart word detection, with a sofisticated detection on 
+ * 4 - With a smart word detection, with a sophisticated detection on 
  * the correct writing of the words. */

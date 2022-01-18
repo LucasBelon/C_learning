@@ -1,4 +1,4 @@
-/* print a Celsius-Fahrenheit convertion table
+/* print a Celsius-Fahrenheit conversion table
  * with a for loop.*/
 main(){
     int fahr ;

@@ -1,4 +1,4 @@
-/* This program is a example of simbolic constants 
+/* This program is a example of symbolic constants 
  * They're a way to remove meaningless numbers from
  * the code. This way we can use names instead of
  * numbers. We're actually adding a level of abstraction

@@ -1,4 +1,4 @@
-/* print a Celsius-Fahrenheit convertion table
+/* print a Celsius-Fahrenheit convert table
  *      for f = 0,20, ... , 300*/
 main(){
     int start, end, incr ;
@@ -9,13 +9,13 @@ main(){
     incr = 20 ;  /*step increment*/
 
     celsius = start ;
-    printf(" This is a Celsius-Fahrenheit convertion table\n Celsius\tFahr\n") ;
+    printf(" This is a Celsius-Fahrenheit convert table\n Celsius\tFahr\n") ;
     while (celsius <= end){
         fahr = ( (9.0/5.0) * (celsius) ) + 32.0 ;
         printf("%4.0f°C----->%6.1f°F\n", celsius, fahr) ;
         celsius = celsius + incr ;
     }
 }
-/* The amount of character avaiable to the % to fill up afects
+/* The amount of character available to the % to fill up affects
  * 'white spaces'. It fills up from right to left.
- * This code is on page 24, execise 1-4*/
+ * This code is on page 24, exercise 1-4*/

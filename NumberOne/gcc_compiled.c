@@ -16,6 +16,6 @@ int main()
  * Why would I need to return 0?
  * To tell to the system that the function came to an end
  * why is stdio with a .h extension?
- * It stands for a header file, that says "oh, i'll call the function you need"
+ * It stands for a header file, that says "oh, I'll call the function you need"
  * to compile this program it was used:
  * $ gcc testWithGcc.c -o testWithGcc */

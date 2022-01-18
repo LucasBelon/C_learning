@@ -32,9 +32,9 @@ int x, n ;
  *  Commands
  * }
  * 
- * Fuctions can show up at any order, and in one or two source-files.
+ * Functions can show up at any order, and in one or two source-files.
  * if the source is on two or more files you'll need to tell more things
  * make it run
  * I don't have a clue about how to make it run with bigger numbers. It
- * goes to 10e10 algarisms*/
+ * goes to 10E10 digits*/
 

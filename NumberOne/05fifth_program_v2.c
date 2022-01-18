@@ -14,8 +14,8 @@ main(){
 }
 
 /* printf() uses %f for both float and double. We put a .0
- * to supress the decimal space.
+ * to suppress the decimal space.
  * The for/while loops verify if there are data to work with
  * before getting into the loop. It puts a little more 
  * of performance on the run.
- * C reads the ascii table, so our characters can be stored as numbers*/
+ * C reads the ASCII table, so our characters can be stored as numbers*/

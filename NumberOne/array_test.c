@@ -6,7 +6,7 @@ main(){
         s[i] = i*i;
         printf("%d\n",s[i]);
     }
-    printf("Sua array ae:\n");
+    printf("Your array there:\n");
     i = 0;
     while(i < 50){
         printf("%d,",s[i]);

@@ -10,5 +10,5 @@ main()
  * \t is for tab. 
  * \b is for backspace. 
  * \" for double quotes. 
- * \\ for counterslash properly
+ * \\ for counter slash properly
  * This code is on page 21*/

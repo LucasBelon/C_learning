@@ -1,4 +1,4 @@
-/* print a Fahrenheit-Celsius convertion table
+/* print a Fahrenheit-Celsius conversion table
  *      for f = 0,20, ... , 300*/
 main(){
     int start, end, incr ;
@@ -21,4 +21,4 @@ main(){
  * Here we can notice that some statements as the if-else and the
  * for-while loops doesn't need semicolon to say that the command
  * ends, because they already have the {} system. When any of those
- * little functions only do a simple action we can ommit the keys {}*/
+ * little functions only do a simple action we can omit the keys {}*/
