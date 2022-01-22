@@ -4,11 +4,13 @@
 
 # include <stdio.h>
 # include <string.h>
+
 /* When we define the STRINGLEN as 16 (We know that our string has
  * 16 characters, it shows a bad behavior, because it can't reach
  * the stop character '\0'. So every string must contain at least
  * one more character in it's length. Two is the perfect point, 
  * maybe there's a "\n\0" in the end, so two characters*/
+
 # define STRINGLEN 17
 /* 
 # define STRINGLEN 16

@@ -1,4 +1,4 @@
-/* Alternative version of the word counter program.
+/* Alternative version of the character counter program.
  * This time it will use a for loop */
 
 #define EOF 0

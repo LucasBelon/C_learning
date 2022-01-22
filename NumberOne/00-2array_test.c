@@ -1,3 +1,5 @@
+/* This program is used to understand better what a array is
+ * and how to interpret them*/
 main(){
     int s[50];
     int i;

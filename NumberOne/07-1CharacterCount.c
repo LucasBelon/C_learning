@@ -1,4 +1,4 @@
-/* This code is meant to do a word count*/
+/* This code is meant to do a character count*/
 
 #define EOF -1
 

@@ -3,10 +3,11 @@
  * with our data. When we first wrote the count character 
  * program we needed to use a very weird looking if-else
  * chain. Now we can choose with elegancy */
-# include <stdio.h>
-# define EOF (-1)
 
-void main(){
+# include <stdio.h>
+# define EOF '+' /* (-1) */
+
+int main(){
     int c, i, nwhite, nother, ndigit [10] ;
 
     nwhite = nother = 0 ;

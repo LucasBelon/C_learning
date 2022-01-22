@@ -1,4 +1,5 @@
 /**/
+
 # include <stdio.h>
 
 # define SHIFTNUMBER 2
@@ -9,7 +10,7 @@
 void main(){
     int contador ;
     for ( contador = ASCII_A ; contador < ASCII_END ; ++contador ) {
-        printf("Char:' %c ' - Num: %d \t", contador, contador) ;
+        printf("Char:' %c 'Num: %d \t", contador, contador) ;
         if ( ( (contador + SHIFTNUMBER) % ITEMCOUNTER ) == 0 ){
             printf("\n") ;
         }

@@ -1,3 +1,10 @@
+/*There are errors that compilers can't be aware of, the
+ * runtime errors. In this case, the program will not run
+ * because of a type conversion that goes wrong. 
+ * This program is meant to be an experiment with printing
+ * different types with different values. It's more like a 
+ * "let's find out what printf does" than anything else.*/
+
 # include <stdio.h>
 
 # define ALIMFORM '\014' /* "Form Feed in ASCII" */
@@ -5,7 +12,6 @@
 # define SUCCESS 1
 # define PERSONALSTRING "A string of characters"
 int main(){
-
 
     char linha [MAXLINHA + 1] ;
 

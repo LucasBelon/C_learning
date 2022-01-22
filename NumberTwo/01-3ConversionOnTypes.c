@@ -1,8 +1,8 @@
-
 /* What happens when we try to operate mathematically using characters?
  * That's what we'll find out*/
 
 # include <stdio.h>
+
 # define STRINGLEN 100
 
 
