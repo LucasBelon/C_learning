@@ -1,4 +1,4 @@
-##C\_Learning Repo
+## C\_Learning Repo
 
 
 My dad gave me this 35yo book cause I cleaned his office.
@@ -7,7 +7,7 @@ find out how it was to learn programming when computers barely
 were known and weren't popular
 
 
-#C - A Linguagem de Programação
+# C - A Linguagem de Programação
 
 B. Kernighan D. Ritchie
 
