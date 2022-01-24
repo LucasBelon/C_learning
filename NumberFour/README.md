@@ -1,4 +1,4 @@
-## ChapterTwo - Types, expressions and operators
+## ChapterFour - Functions and program structures
 # C - A Linguagem de Programação
 B. Kernighan D. Ritchie
 

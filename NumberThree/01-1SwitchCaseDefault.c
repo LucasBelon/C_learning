@@ -8,7 +8,7 @@
 # define EOF '+' /* (-1) */
 
 int main(){
-    int c, i, nwhite, nother, ndigit [10] ;
+    int c, i, nwhite, nother, ndigit [10];
 
     nwhite = nother = 0 ;
     for (i = 0 ; i < 10 ; ++i ){

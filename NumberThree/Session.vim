@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/C_Learning/NumberTwo
+cd ~/C_Learning/NumberThree
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -14,11 +14,9 @@ argglobal
 set stal=2
 tabnew
 tabnew
-tabnew
 tabrewind
-edit 01-1testingWithTypes.c
+edit 01-1SwitchCaseDefault.c
 argglobal
-balt 01-1testingWithTypes.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -33,11 +31,10 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberTwo
+lcd ~/C_Learning/NumberThree
 tabnext
-edit ~/C_Learning/NumberTwo/01-2testingWithStrings.c
+edit ~/C_Learning/NumberThree/01-2DoWhile.c
 argglobal
-balt ~/C_Learning/NumberTwo/01-1testingWithTypes.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -52,11 +49,10 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberTwo
+lcd ~/C_Learning/NumberThree
 tabnext
-edit ~/C_Learning/NumberTwo/01-3ConversionOnTypes.c
+edit ~/C_Learning/NumberThree/01-3BreakContinueGotoLabel.c
 argglobal
-balt ~/C_Learning/NumberTwo/01-2testingWithStrings.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -71,32 +67,12 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberTwo
-tabnext
-edit ~/C_Learning/NumberTwo/01-4AsciiTable.c
-argglobal
-balt ~/C_Learning/NumberTwo/01-3ConversionOnTypes.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-lcd ~/C_Learning/NumberTwo
+lcd ~/C_Learning/NumberThree
 tabnext 1
 set stal=1
-badd +0 ~/C_Learning/NumberTwo/01-1testingWithTypes.c
-badd +1 ~/C_Learning/NumberTwo/01-2testingWithStrings.c
-badd +1 ~/C_Learning/NumberTwo/01-3ConversionOnTypes.c
-badd +1 ~/C_Learning/NumberTwo/01-4AsciiTable.c
+badd +0 ~/C_Learning/NumberThree/01-1SwitchCaseDefault.c
+badd +0 ~/C_Learning/NumberThree/01-3BreakContinueGotoLabel.c
+badd +0 ~/C_Learning/NumberThree/01-2DoWhile.c
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif

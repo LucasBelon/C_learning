@@ -1,4 +1,4 @@
-## ChapterTwo - Types, expressions and operators
+## ChapterThree - Control Flow
 # C - A Linguagem de Programação
 B. Kernighan D. Ritchie
 

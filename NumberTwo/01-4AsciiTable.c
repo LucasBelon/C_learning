@@ -1,4 +1,5 @@
-/**/
+/* This program is here to see how the printing using 
+ * the ascii works, and what are it's limits*/
 
 # include <stdio.h>
 
