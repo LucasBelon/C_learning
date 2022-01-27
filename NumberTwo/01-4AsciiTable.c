@@ -4,20 +4,20 @@
 # include <stdio.h>
 
 # define SHIFTNUMBER 2
-# define ITEMCOUNTER 5
+# define LINELENGHT 5
 # define ASCII_A 49
 # define ASCII_END 128
 
-void main(){
-    int contador ;
-    for ( contador = ASCII_A ; contador < ASCII_END ; ++contador ) {
-        printf("Char:' %c 'Num: %d \t", contador, contador) ;
-        if ( ( (contador + SHIFTNUMBER) % ITEMCOUNTER ) == 0 ){
+int main(){
+    int step ;
+    for ( step = ASCII_A ; step < ASCII_END ; ++step ) {
+        printf("Char:' %c 'Num: %d \t", step, step) ;
+        if ( ( (step + SHIFTNUMBER) % LINELENGHT ) == 0 ){
             printf("\n") ;
         }
-        if (contador+2 == ASCII_END){
-            ++contador ;
-            printf("\nChar: BSpace Num: %d \t", contador) ;
+        if (step+2 == ASCII_END){
+            ++step ;
+            printf("\nChar: BSpace Num: %d \t", step) ;
         }
     }
     printf("\n") ;

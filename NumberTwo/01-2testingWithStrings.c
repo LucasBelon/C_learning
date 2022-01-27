@@ -3,7 +3,6 @@
  * and to use them in a practical example */
 
 # include <stdio.h>
-# include <string.h>
 
 /* When we define the STRINGLEN as 16 (We know that our string has
  * 16 characters, it shows a bad behavior, because it can't reach
@@ -40,7 +39,7 @@ int main(){
         printf("%c\n",c) ;
         ++i ;
     }
-    c = lenght(string) ;
-    printf("Length of the string: %d\n",c) ;
+    c = lenght(string) + 1 ;
+    printf("Length of the string (With stop character): %d\n",c) ;
     return 0 ;
 }

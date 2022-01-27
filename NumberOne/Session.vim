@@ -43,7 +43,7 @@ set winwidth=1
 exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 argglobal
-balt 06-1LineCount.c
+balt 07-1CharacterCount.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -162,11 +162,11 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe '2resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 exe '3resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 3resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 3resize ' . ((&columns * 52 + 53) / 106)
 argglobal
 balt ~/C_Learning/NumberOne/01-1HelloWorld.c
 setlocal fdm=indent
@@ -215,6 +215,8 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+4
+normal! zo
 let s:l = 1 - ((0 * winheight(0) + 5) / 11)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
@@ -223,11 +225,11 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberOne
 wincmd w
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe '2resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 exe '3resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 3resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 3resize ' . ((&columns * 52 + 53) / 106)
 tabnext
 edit ~/C_Learning/NumberOne/03-1HeaderFahrCelsius.c
 let s:save_splitbelow = &splitbelow
@@ -250,11 +252,11 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe '2resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 exe '3resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 3resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 3resize ' . ((&columns * 52 + 53) / 106)
 argglobal
 balt ~/C_Learning/NumberOne/03-3Constants.c
 setlocal fdm=indent
@@ -311,11 +313,11 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberOne
 wincmd w
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe '2resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 exe '3resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 3resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 3resize ' . ((&columns * 52 + 53) / 106)
 tabnext
 edit ~/C_Learning/NumberOne/04-1GetcharPutchar.c
 let s:save_splitbelow = &splitbelow
@@ -334,8 +336,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 argglobal
 balt ~/C_Learning/NumberOne/04-2GetcharPutchar.c
 setlocal fdm=indent
@@ -373,8 +375,8 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberOne
 wincmd w
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 tabnext
 edit ~/C_Learning/NumberOne/05-1CharCount.c
 let s:save_splitbelow = &splitbelow
@@ -393,8 +395,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 argglobal
 balt ~/C_Learning/NumberOne/05-2CharCount.c
 setlocal fdm=indent
@@ -432,8 +434,8 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberOne
 wincmd w
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 tabnext
 edit ~/C_Learning/NumberOne/06-1LineCount.c
 let s:save_splitbelow = &splitbelow
@@ -456,11 +458,11 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe '2resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 exe '3resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 3resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 3resize ' . ((&columns * 52 + 53) / 106)
 argglobal
 balt ~/C_Learning/NumberOne/06-2LineTabSpace.c
 setlocal fdm=indent
@@ -517,11 +519,11 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberOne
 wincmd w
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe '2resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 exe '3resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 3resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 3resize ' . ((&columns * 52 + 53) / 106)
 tabnext
 edit ~/C_Learning/NumberOne/07-1CharacterCount.c
 let s:save_splitbelow = &splitbelow
@@ -540,8 +542,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 argglobal
 balt ~/C_Learning/NumberOne/07-2Exercise.c
 setlocal fdm=indent
@@ -552,6 +554,10 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+9
+normal! zo
+15
+normal! zo
 let s:l = 1 - ((0 * winheight(0) + 11) / 23)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
@@ -579,8 +585,8 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberOne
 wincmd w
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 tabnext
 edit ~/C_Learning/NumberOne/08-1ArrayCharCount.c
 let s:save_splitbelow = &splitbelow
@@ -599,8 +605,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 argglobal
 balt ~/C_Learning/NumberOne/08-2CharInWordCount.c
 setlocal fdm=indent
@@ -638,8 +644,8 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberOne
 wincmd w
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 tabnext
 edit ~/C_Learning/NumberOne/09-1PowerFunction.c
 argglobal
@@ -652,6 +658,8 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+6
+normal! zo
 let s:l = 1 - ((0 * winheight(0) + 11) / 23)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
@@ -677,8 +685,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 argglobal
 balt ~/C_Learning/NumberOne/10-2Scopes.c
 setlocal fdm=indent
@@ -716,8 +724,8 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberOne
 wincmd w
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 tabnext 1
 set stal=1
 badd +1 ~/C_Learning/NumberOne/00-1gcc_compiled.c

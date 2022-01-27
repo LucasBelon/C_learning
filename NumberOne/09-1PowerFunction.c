@@ -3,9 +3,9 @@
 
 
 main(){         /* It tests the pot function*/
-    int i ;
+    unsigned int i ;
     printf("i\t2^i\t-3^i\n") ;
-    for (i = 0 ; i < 10 ; ++i){
+    for (i = 0 ; i < 20 ; ++i){
         printf("%d\t%d\t%d\n", i, pot(2, i), pot(-3, i) ) ;
     }
 }

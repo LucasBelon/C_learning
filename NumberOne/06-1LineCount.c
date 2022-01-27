@@ -17,5 +17,5 @@ main(){
  * if the character that getchar() gets is a 'new line'
  * character.
  * The '==' sign is the boolean comparator to see if two 
- * things are equal
+ * things are equal.
  * This code is on page 29 of the book */

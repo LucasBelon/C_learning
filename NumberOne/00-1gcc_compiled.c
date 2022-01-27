@@ -18,4 +18,9 @@ int main()
  * why is stdio with a .h extension?
  * Answer: It stands for a header file, that says "oh, I'll call the function you need"
  * to compile this program it was used:
- * $ gcc 00-1testWithGcc.c -o testWithGcc */
+ * $ gcc 00-1testWithGcc.c -o testWithGcc 
+ * 
+ * In Termux:
+ * We don't have the gcc compiler program, we need to use the Clang, that uses the
+ * llvm. There are a front-end and back-end parts of a compiler. We need both
+ * to operate with them, so we say that gcc is a compiler, but clang isn't.*/

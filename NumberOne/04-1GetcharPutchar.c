@@ -20,7 +20,7 @@ main(){
 }
 
 /* The != is 'not equal to' operator.
- * EOF stands to End Of File. It should return a true or false
+ * EOF stands to End Of File. It should return a true or false.
  * getchar() reads a EOF statement when it's done. It seems that
  * the absence of characters are also a relevant information.
  * c is declared as int. It's able to handle the EOF and others 

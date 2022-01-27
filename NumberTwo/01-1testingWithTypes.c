@@ -60,5 +60,5 @@ int main(){
  *  the lines where it happened.
  *
  *  Also, our functions needs to be declared as to the type of 
- *  response they will give the to system. I tried with void main(){}
+ *  response they will give to the system. I tried with void main(){}
  *  and this last form is int main, so the function can return a int value*/

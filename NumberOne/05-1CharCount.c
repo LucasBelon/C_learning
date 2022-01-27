@@ -1,4 +1,4 @@
-/* This program is to do a character count over a
+/* This program does a character count over a
  * character chain (string).*/
 
 #define EOF 0

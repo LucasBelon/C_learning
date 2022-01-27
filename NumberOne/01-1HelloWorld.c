@@ -6,4 +6,3 @@ main(){
  * cc first_program.c
  * This program is available on page 20 of 
  * the book "C the programming language"*/
-

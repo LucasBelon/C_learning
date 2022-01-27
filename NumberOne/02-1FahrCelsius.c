@@ -19,6 +19,8 @@ main(){
 /* The first two lines are a comment. They're ignored by the compiler.
  * In C every variable must be declared before being used. Usually they're
  * declared in the beginning of the function, before any executable command.
+ * The reason for this is related to the usage of memory and how our computer
+ * keeps some kind of slots to keep track of what are our data.
  * The precision of int's and float's depends on the machine.
  * The other types that C provides are:
  * char - character, a single byte
@@ -28,7 +30,7 @@ main(){
  * There are also arrangements, structures and unions of these basic types,
  * Pointers to them, functions that returns them.
  * When the program runs, the (fahr <= end) is tested (it's executed).
- * When the test becomes false, the lace is broken, and the execution will 
+ * When the test becomes false, the loop is broken, and the execution will 
  * continue as the lines goes.
  * In C, a integer division truncates the result, and the fraction part is lost
  * In C, a Integer-Float subtraction and addition automatically converts the integer
@@ -50,7 +52,8 @@ main(){
  * %s for a string and
  * %% for the % sign.
  * Each % sign matches in order of the second argument.
- * Printf is not a function from C language, it's only a useful function that's part of the
+ * Printf is not a function from C language, it's only a useful 
+ * function that's part of the
  * standard library that's accessible to C language.
  * C language does not define any I/O 
  * This program is on page 21-22 of the book*/
