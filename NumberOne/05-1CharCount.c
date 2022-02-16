@@ -1,5 +1,5 @@
 /* This program does a character count over a
- * character chain (string).*/
+ * character chain (string) (array of bytes, of characters).*/
 
 #define EOF 0
 

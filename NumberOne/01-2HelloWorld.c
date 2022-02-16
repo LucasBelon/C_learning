@@ -1,7 +1,7 @@
 main()
 {
-    printf("first - Hello ") ;
-    printf("program - World!") ;
+    printf( "First   - Hello    ") ;
+    printf( "Program - World!   ") ;
     printf("\n") ;
 }
 

@@ -2,7 +2,8 @@
  * It reads a character and returns the character itself.
  * It actually copy the input to the output*/
 
-/*
+/* We can use two conventions, EOF as 0 or -1. The standard
+ * library uses the EOF as -1, so we do it also.
  *#define EOF   0
  * or
  *#define EOF   -1

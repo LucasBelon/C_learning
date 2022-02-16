@@ -16,4 +16,9 @@ main(){
     }
 }
 
-/* This code is on page 26 of the book */
+/* This code is on page 26 of the book 
+ * The #define is what's called a macro. It will replace whatever
+ * we ask it to replace. So, when we're writing START our compiler
+ * will do the substitution before it really compile. It's called the
+ * C pre-processing.*/
+

@@ -17,7 +17,7 @@ main(){
 }
 
 /* The first two lines are a comment. They're ignored by the compiler.
- * In C every variable must be declared before being used. Usually they're
+ * In C, every variable must be declared before being used. Usually they're
  * declared in the beginning of the function, before any executable command.
  * The reason for this is related to the usage of memory and how our computer
  * keeps some kind of slots to keep track of what are our data.
@@ -57,4 +57,3 @@ main(){
  * standard library that's accessible to C language.
  * C language does not define any I/O 
  * This program is on page 21-22 of the book*/
-
