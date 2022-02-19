@@ -1,6 +1,6 @@
 /* This program is meant to read a group of lines
  * and print the biggest of them.*/
-
+# include <stdio.h>
 #define MAXLINESIZE    1000    /*Max size of a line*/
 
 main(){
@@ -12,7 +12,7 @@ main(){
     max = 0 ;
     while ( (size = readline(line, MAXLINESIZE)) > 0){
         if (size > max){
-            max = tam ;
+            max = size ;
             copy (line, keeper) ;
         }
     }

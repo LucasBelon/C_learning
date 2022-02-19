@@ -18,7 +18,7 @@ main(){
     max = 0 ;
     while ( (size = readline()) > 0){
         if (size > max){
-            max = tam ;
+            max = size ;
             copy() ;
         }
     }
