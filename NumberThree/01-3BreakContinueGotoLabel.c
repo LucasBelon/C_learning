@@ -70,4 +70,4 @@ int main() /* Removes ending whites and tabs */
     /* In this case our label is the 'endit',
      * that says "Jump to that part of the code"*/
 }
-
+/* This code is at page 68 (the last of the chapter) */

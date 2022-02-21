@@ -21,4 +21,5 @@ main(){
  * Here we can notice that some statements as the if-else and the
  * for-while loops doesn't need semicolon to say that the command
  * ends, because they already have the {} system. When any of those
- * little functions only do a simple action we can omit the keys {}*/
+ * little functions only do a simple action we can omit the keys {}
+ * This program is part of exercise 1-3 of page 24 of the book*/

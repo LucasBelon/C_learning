@@ -38,4 +38,5 @@ main(){
  * Any integer expression can be used as a index number. The indexes always starts on zero.
  * The declared array is there to store numeric values. The operation inside the index is there
  * to synchronize the number as string to the number as decimal on the ASCII table. It's a clever
- * trick, but not that much useful to me*/
+ * trick, but not that much useful to me
+ * This code is on page 32 of the book */

@@ -3,25 +3,7 @@
 # include <stdio.h>
 #define MAXLINESIZE    1000    /*Max size of a line*/
 
-main(){
-    int size ; /* Current size of the line*/
-    int max ; /* Max size until now*/
-    char line[MAXLINESIZE] ; /* current line*/
-    char keeper[MAXLINESIZE] ; /* biggest kept line*/
-
-    max = 0 ;
-    while ( (size = readline(line, MAXLINESIZE)) > 0){
-        if (size > max){
-            max = size ;
-            copy (line, keeper) ;
-        }
-    }
-    if (max > 0){ /* input had one line*/
-        printf("%s",keeper) ;
-    }
-}
-
-readline(s, lim) /* reads the line in s, returns the size*/
+int readline(s, lim) /* reads the line in s, returns the size*/
 char s[] ;
 int lim ;
 {
@@ -37,7 +19,8 @@ int lim ;
     s[i] = '\0' ;
     return (i) ;
 }
-copy (s1, s2) /* copies the size of 21 in s2; We'll assume that s1 fits at s2*/
+
+void copy (s1, s2) /* copies the size of 21 in s2; We'll assume that s1 fits at s2*/
 char s1[], s2[] ;
 {
     int i ;
@@ -47,5 +30,25 @@ char s1[], s2[] ;
         ++i ;
     }
 }
+
+int main(){
+    int size ; /* Current size of the line*/
+    int max ; /* Max size until now*/
+    char line[MAXLINESIZE] ; /* current line*/
+    char keeper[MAXLINESIZE] ; /* biggest kept line*/
+
+    max = 0 ;
+    while ( (size = readline(line, MAXLINESIZE)) > 0){
+        if (size > max){
+            max = size ;
+            copy (line, keeper) ;
+        }
+    }
+    if (max > 0){ /* input had one line*/
+        printf("%s",keeper) ;
+    }
+    return 0 ;
+}
+
 
 /* This program is on page 37 of the book*/

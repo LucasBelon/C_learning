@@ -32,4 +32,5 @@ main(){
  * we print the number of characters of the word. We use the 
  * character count program as a base. We print with a for loop
  * the amount of character we have in the word then we make the
- * character counter = 0*/
+ * character counter = 0
+ * This code is on page 33 of the book, exercise 1-12  */

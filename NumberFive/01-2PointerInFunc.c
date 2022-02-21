@@ -1,10 +1,12 @@
-/* This example, with a function, show us the usability  */
-/* Imagine this: When we use variables, we have some permissions.
+/* This example, with a function, show us the usability
+ *
+ * Imagine this: When we use variables, we have some permissions.
  * When we need to use a function to change some data it's not owner
  * of the variable. So the standard is, you can read the value, but you
  * can't overwrite it. Pointers are a way to say "If you want to change, it's
  * right there in the memory, I will not give you a copy of my variable, I wil
  * give you it's location.*/
+
 # include <stdio.h>
 
 void change(px, py)

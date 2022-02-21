@@ -11,6 +11,7 @@
  * maybe there's a "\n\0" in the end, so two characters*/
 
 # define STRINGLEN 17
+
 /* 
 # define STRINGLEN 16
 */
@@ -43,3 +44,5 @@ int main(){
     printf("Length of the string (With stop character): %d\n",c) ;
     return 0 ;
 }
+ /* This is related to chapter two.
+  * It starts at page 42 of the book and ends at page 57*/

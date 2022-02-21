@@ -1,3 +1,6 @@
+/* This program was written when I looked at a website that said 
+ * That using gcc was better*/
+
 #include <stdio.h>
 
 /* Testing the GCC compiler. First step: Print "Hello World" */

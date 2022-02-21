@@ -1,4 +1,4 @@
-/* Intro to pointers*/
+/* Intro to pointers, page 89 */
 
 #include <stdio.h>
 #include <math.h>

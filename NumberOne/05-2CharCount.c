@@ -18,4 +18,5 @@ main(){
  * The for/while loops verify if there are data to work with
  * before getting into the loop. It puts a little more 
  * of performance on the run.
- * C reads the ASCII table, so our characters can be stored as numbers*/
+ * C reads the ASCII table, so our characters can be stored as numbers
+ * this code is on page 28 of the book */

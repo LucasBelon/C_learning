@@ -10,10 +10,8 @@ main(){
 /* On the first argument we see the lower limit. On the second the upper limit.
  * On the third the loop step.
  * Its 3 main parts are: Start, if true continue, reboot with step
- * This code is on page 24-25.
  * With 'for loops' we can use multi index operations, like:
 
 for (i = 0, j = 1000 ; i < j ; i++, j--){}
 
- * */
-
+ * This code is on page 24-25. */

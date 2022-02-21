@@ -5,19 +5,17 @@
 
 # define STRINGLEN 100
 
-
-/* Turns 's' into a integer */
-int atio(s)
-char s[] ;
+/* Turns 'string' into a integer */
+int atio(string)
+char string[] ;
 {
     int i, n ;
     n = 0 ;
-    for (i = 0 ; s[i] >= '0' && s[i] <= '9' ; ++i){
-        n = 10 * n + s[i] - '0' ;
+    for (i = 0 ; string[i] >= '0' && string[i] <= '9' ; ++i){
+        n = 10 * n + string[i] - '0' ;
     }
     return (n) ;
 }
-
 
 int main(){
     char converted ;
@@ -28,3 +26,8 @@ int main(){
     printf("The number converted to number is: %d\n", converted) ;
     printf("The number in string is \"%c\"\n", converted) ;
 }
+
+/* This code is at page 47 of the book (the atoi, but named differently function) 
+ * 
+ * I've written "atio" 'cause the C lang already has an atoi function, that was written
+ * by K&R, so writing an atoi function would overwrite it. */
