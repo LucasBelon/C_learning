@@ -92,6 +92,8 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+30
+normal! zo
 let s:l = 1 - ((0 * winheight(0) + 5) / 11)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
@@ -303,7 +305,26 @@ exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 tabnext
 edit ~/C_Learning/NumberFive/03-1ArgcArgv.c
+let s:save_splitbelow = &splitbelow
+let s:save_splitright = &splitright
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+let &splitbelow = s:save_splitbelow
+let &splitright = s:save_splitright
+wincmd t
+let s:save_winminheight = &winminheight
+let s:save_winminwidth = &winminwidth
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
 argglobal
+balt ~/C_Learning/NumberFive/03-2ShellOptions.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -312,36 +333,84 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 7 - ((6 * winheight(0) + 11) / 23)
+19
+normal! zo
+34
+normal! zo
+50
+normal! zo
+let s:l = 1 - ((0 * winheight(0) + 11) / 23)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 7
+keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberFive
+wincmd w
+argglobal
+if bufexists("~/C_Learning/NumberFive/03-2ShellOptions.c") | buffer ~/C_Learning/NumberFive/03-2ShellOptions.c | else | edit ~/C_Learning/NumberFive/03-2ShellOptions.c | endif
+balt ~/C_Learning/NumberFive/03-1ArgcArgv.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+20
+normal! zo
+25
+normal! zo
+26
+normal! zo
+27
+normal! zo
+34
+normal! zo
+42
+normal! zo
+43
+normal! zo
+45
+normal! zo
+let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+lcd ~/C_Learning/NumberFive
+wincmd w
+exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
 tabnext 1
 set stal=1
 badd +1 ~/C_Learning/NumberFive/01-1PointerIntro.c
 badd +27 ~/C_Learning/NumberFive/01-4PointersVsIndex.c
 badd +1 ~/C_Learning/NumberFive/02-1AritmeticsWithPointers.c
+badd +1 ~/C_Learning/NumberFive/02-3AnotherExample.c
+badd +54 ~/C_Learning/NumberFive/03-1ArgcArgv.c
 badd +1 ~/C_Learning/NumberFive/01-2PointerInFunc.c
 badd +1 ~/C_Learning/NumberFive/01-3Pointers.c
 badd +1 ~/C_Learning/NumberFive/01-5PointersVsIndexV2.c
-badd +1 ~/C_Learning/NumberFive/02-2PointersCharsFuncs.c
 badd +1 ~/C_Learning/NumberFive/02-2PointersCharFunc.c
-badd +1 ~/C_Learning/NumberFive/02-3AnotherExample.c
 badd +37 ~/C_Learning/NumberFive/02-4MultiDimensionalArrays.c
-badd +0 ~/C_Learning/NumberFive/03-1ArgcArgv.c
+badd +1 ~/C_Learning/NumberFive/02-2PointersCharsFuncs.c
+badd +0 ~/C_Learning/NumberFive/03-2ShellOptions.c
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
 set winheight=1 winwidth=20 shortmess=filnxtToOS
+let &winminheight = s:save_winminheight
+let &winminwidth = s:save_winminwidth
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
