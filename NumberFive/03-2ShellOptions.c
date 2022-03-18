@@ -7,6 +7,8 @@
  * create a program that is actually helpful with flags is
  * amazing*/
 
+/* It is missing the topic: Pointers to functions */
+
 
 # include <stdio.h>
 # include <string.h>

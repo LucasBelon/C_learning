@@ -9,14 +9,25 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
+badd +1 01-1PointerIntro.c
+badd +1 01-4PointersVsIndex.c
+badd +1 02-1AritmeticsWithPointers.c
+badd +1 02-3AnotherExample.c
+badd +1 03-1ArgcArgv.c
+badd +1 01-2PointerInFunc.c
+badd +1 01-3Pointers.c
+badd +1 01-5PointersVsIndexV2.c
+badd +1 02-2PointersCharFunc.c
+badd +37 02-4MultiDimensionalArrays.c
+badd +1 03-2ShellOptions.c
 argglobal
 %argdel
 $argadd 01-1PointerIntro.c
 set stal=2
-tabnew
-tabnew
-tabnew
-tabnew
+tabnew +setlocal\ bufhidden=wipe
+tabnew +setlocal\ bufhidden=wipe
+tabnew +setlocal\ bufhidden=wipe
+tabnew +setlocal\ bufhidden=wipe
 tabrewind
 edit 01-1PointerIntro.c
 let s:save_splitbelow = &splitbelow
@@ -39,11 +50,11 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
-exe '2resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
-exe '3resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 3resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 58 + 57) / 115)
+exe '2resize ' . ((&lines * 13 + 14) / 29)
+exe 'vert 2resize ' . ((&columns * 56 + 57) / 115)
+exe '3resize ' . ((&lines * 12 + 14) / 29)
+exe 'vert 3resize ' . ((&columns * 56 + 57) / 115)
 argglobal
 balt 01-2PointerInFunc.c
 setlocal fdm=indent
@@ -56,7 +67,7 @@ setlocal fdn=20
 setlocal fen
 7
 normal! zo
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -74,7 +85,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 5) / 11)
+let s:l = 1 - ((0 * winheight(0) + 6) / 13)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -94,18 +105,18 @@ setlocal fdn=20
 setlocal fen
 30
 normal! zo
-let s:l = 1 - ((0 * winheight(0) + 5) / 11)
+let s:l = 1 - ((0 * winheight(0) + 6) / 12)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
 wincmd w
-exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
-exe '2resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
-exe '3resize ' . ((&lines * 11 + 13) / 26)
-exe 'vert 3resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 58 + 57) / 115)
+exe '2resize ' . ((&lines * 13 + 14) / 29)
+exe 'vert 2resize ' . ((&columns * 56 + 57) / 115)
+exe '3resize ' . ((&lines * 12 + 14) / 29)
+exe 'vert 3resize ' . ((&columns * 56 + 57) / 115)
 tabnext
 edit 01-4PointersVsIndex.c
 let s:save_splitbelow = &splitbelow
@@ -124,8 +135,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 58 + 57) / 115)
+exe 'vert 2resize ' . ((&columns * 56 + 57) / 115)
 argglobal
 balt 01-5PointersVsIndexV2.c
 setlocal fdm=indent
@@ -138,7 +149,7 @@ setlocal fdn=20
 setlocal fen
 8
 normal! zo
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -159,7 +170,7 @@ setlocal fdn=20
 setlocal fen
 30
 normal! zo
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -167,8 +178,8 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberFive
 wincmd w
-exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 58 + 57) / 115)
+exe 'vert 2resize ' . ((&columns * 56 + 57) / 115)
 tabnext
 edit ~/C_Learning/NumberFive/02-1AritmeticsWithPointers.c
 let s:save_splitbelow = &splitbelow
@@ -187,8 +198,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 58 + 57) / 115)
+exe 'vert 2resize ' . ((&columns * 56 + 57) / 115)
 argglobal
 balt ~/C_Learning/NumberFive/02-2PointersCharFunc.c
 setlocal fdm=indent
@@ -203,7 +214,7 @@ setlocal fen
 normal! zo
 30
 normal! zo
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -226,7 +237,7 @@ setlocal fen
 normal! zo
 33
 normal! zo
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -234,8 +245,8 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberFive
 wincmd w
-exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 58 + 57) / 115)
+exe 'vert 2resize ' . ((&columns * 56 + 57) / 115)
 tabnext
 edit ~/C_Learning/NumberFive/02-3AnotherExample.c
 let s:save_splitbelow = &splitbelow
@@ -254,8 +265,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
+exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
 argglobal
 balt ~/C_Learning/NumberFive/02-4MultiDimensionalArrays.c
 setlocal fdm=indent
@@ -274,7 +285,7 @@ normal! zo
 normal! zo
 24
 normal! zo
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -293,7 +304,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -301,8 +312,8 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberFive
 wincmd w
-exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
+exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
 tabnext
 edit ~/C_Learning/NumberFive/03-1ArgcArgv.c
 let s:save_splitbelow = &splitbelow
@@ -321,8 +332,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 56 + 57) / 115)
+exe 'vert 2resize ' . ((&columns * 58 + 57) / 115)
 argglobal
 balt ~/C_Learning/NumberFive/03-2ShellOptions.c
 setlocal fdm=indent
@@ -339,7 +350,7 @@ normal! zo
 normal! zo
 50
 normal! zo
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -358,23 +369,19 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-20
-normal! zo
-25
-normal! zo
-26
+22
 normal! zo
 27
 normal! zo
-34
+28
 normal! zo
-42
+29
 normal! zo
-43
+44
 normal! zo
 45
 normal! zo
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -382,22 +389,10 @@ keepjumps 1
 normal! 0
 lcd ~/C_Learning/NumberFive
 wincmd w
-exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
-exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
+exe 'vert 1resize ' . ((&columns * 56 + 57) / 115)
+exe 'vert 2resize ' . ((&columns * 58 + 57) / 115)
 tabnext 1
 set stal=1
-badd +1 ~/C_Learning/NumberFive/01-1PointerIntro.c
-badd +27 ~/C_Learning/NumberFive/01-4PointersVsIndex.c
-badd +1 ~/C_Learning/NumberFive/02-1AritmeticsWithPointers.c
-badd +1 ~/C_Learning/NumberFive/02-3AnotherExample.c
-badd +54 ~/C_Learning/NumberFive/03-1ArgcArgv.c
-badd +1 ~/C_Learning/NumberFive/01-2PointerInFunc.c
-badd +1 ~/C_Learning/NumberFive/01-3Pointers.c
-badd +1 ~/C_Learning/NumberFive/01-5PointersVsIndexV2.c
-badd +1 ~/C_Learning/NumberFive/02-2PointersCharFunc.c
-badd +37 ~/C_Learning/NumberFive/02-4MultiDimensionalArrays.c
-badd +1 ~/C_Learning/NumberFive/02-2PointersCharsFuncs.c
-badd +0 ~/C_Learning/NumberFive/03-2ShellOptions.c
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
