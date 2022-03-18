@@ -11,8 +11,10 @@ endif
 set shortmess=aoO
 badd +1 01-1StructuresIntro.c
 badd +1 01-2StructuresAndFunctions.c
-badd +7 01-3ArrayOfStruct.c
+badd +1 01-3ArrayOfStruct.c
 badd +1 playingWithArraysAndPointers.c
+badd +1 01-4Fields.c
+badd +1 01-5Unions.c
 argglobal
 %argdel
 $argadd 01-1StructuresIntro.c
@@ -20,6 +22,8 @@ $argadd 01-2StructuresAndFunctions.c
 $argadd 01-3ArrayOfStruct.c
 $argadd playingWithArraysAndPointers.c
 set stal=2
+tabnew +setlocal\ bufhidden=wipe
+tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
@@ -36,11 +40,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 13) / 26)
+let s:l = 54 - ((25 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 54
 normal! 0
 tabnext
 edit 01-1StructuresIntro.c
@@ -53,11 +57,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 13) / 26)
+let s:l = 56 - ((25 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 56
 normal! 0
 tabnext
 edit 01-2StructuresAndFunctions.c
@@ -72,11 +76,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 13) / 26)
+let s:l = 22 - ((21 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 22
 normal! 0
 tabnext
 edit 01-3ArrayOfStruct.c
@@ -91,13 +95,55 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 7 - ((6 * winheight(0) + 13) / 26)
+10
+normal! zo
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 7
+keepjumps 1
 normal! 0
-tabnext 4
+tabnext
+edit 01-4Fields.c
+argglobal
+if bufexists("01-4Fields.c") | buffer 01-4Fields.c | else | edit 01-4Fields.c | endif
+balt 01-3ArrayOfStruct.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+tabnext
+edit 01-5Unions.c
+argglobal
+if bufexists("01-5Unions.c") | buffer 01-5Unions.c | else | edit 01-5Unions.c | endif
+balt 01-4Fields.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+7
+normal! zo
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+tabnext 6
 set stal=1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
