@@ -3,7 +3,7 @@
 
 # include <stdio.h>
 
-day_of_year(ad) /* It finds the day of the year from day and month*/
+int day_of_year(ad) /* It finds the day of the year from day and month*/
 struct data *ad ;
 {
     int i, day, leap_year ;

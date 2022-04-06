@@ -7,7 +7,9 @@
  * create a program that is actually helpful with flags is
  * amazing*/
 
-/* It is missing the topic: Pointers to functions */
+/* It is missing the topic: Pointers to functions 
+ * I've read the chapter again, and it's still a 
+ * ominous subject.*/
 
 
 # include <stdio.h>
